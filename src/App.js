@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Ideas from './Ideas';
+import Form from './Form';
 import './App.css';
 
 class App extends Component {
@@ -14,10 +15,15 @@ class App extends Component {
     }
   }
 
+  addIdea = (newIdea) => {
+    this.setState({ ideas: [...this.state.ideas, newIdea]});
+  }
+
   render() {
     return (
       <main className='App'>
         <h1>IdeaBox</h1>
+        <Form addIdea={this.addIdea} />
         <Ideas ideas={this.state.ideas} />
       </main>
     )
