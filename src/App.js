@@ -17,8 +17,8 @@ class App extends Component {
   render() {
     return (
       <main className='App'>
-        <h1>IdeaBox</h1>
-        <Ideas />
+      <h1>IdeaBox</h1>
+      <Ideas name='Travis' />
       </main>
     )
   }
