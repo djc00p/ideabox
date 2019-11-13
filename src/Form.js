@@ -47,9 +47,9 @@ class Form extends Component {
       value={this.state.description}
       onChange={event => this.handleChange(event)}
       />
-
-      <button onClick={event => this.submitIdea(event)}>SUBMIT</button> // adding the event listner to the button
+      <button onClick={event => this.submitIdea(event)}>SUBMIT</button>
       </form>
+      // adding the event listner to the button
     )
   }
 }
